@@ -1,0 +1,60 @@
+# === Go build artifacts ===
+bin/
+build/
+dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# === Go workspace ===
+*.log
+*.tmp
+tmp/
+*.cache
+*.coverprofile
+
+# === Go modules ===
+vendor/
+go.work
+go.work.sum
+
+# === Environment & configuration ===
+.env
+.env.local
+.env.production
+.env.development
+config.yaml
+config.json
+
+# === IDE & OS files ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === Docker ===
+*.pid
+docker-compose.override.yml
+
+# === Migrations (if generated) ===
+migrations/*.tmp
+
+# === Node/static tools (if you use a frontend) ===
+node_modules/
+*.map
+
+# === Air (live reload tool for Go) ===
+.air.toml
+tmp/
+
+# === Test data ===
+coverage.txt
+*.prof
+
+# === Others ===
+*.bak
+*.swp
