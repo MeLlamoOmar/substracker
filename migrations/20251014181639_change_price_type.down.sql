@@ -1,0 +1,3 @@
+ALTER TABLE subscriptions
+ALTER COLUMN price TYPE INTEGER
+USING price::INTEGER;
