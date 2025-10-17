@@ -1,0 +1,66 @@
+{{ define "dashboard" }}
+  <div class="mx-90 flex flex-col gap-8">
+    <h2 class="text-white font-bold text-5xl mb-4">Dashboard</h2>
+    <div class="grid grid-cols-3 gap-6">
+      <div class="border border-blue-300/20 p-4 rounded-lg flex flex-col justify-center gap-1">
+        <h3 class="text-white/80 text-lg mb-2">Total Monthly Cost</h3>
+        <p class="text-white font-bold text-xl">RD$ 350</p>
+      </div>
+      <div class="border border-blue-300/20 p-4 rounded-lg flex flex-col justify-center gap-1">
+        <h3 class="text-white/80 text-lg mb-2">Total Subscriptions</h3>
+        <p class="text-white font-bold text-xl">5</p>
+      </div>
+      <div class="border border-blue-300/20 p-4 rounded-lg flex flex-col justify-center gap-1">
+        <h3 class="text-white/80 text-lg mb-2">Upcoming Payments</h3>
+        <p class="text-white font-bold text-xl">RD$ 700</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-6">
+      <div class="border border-blue-300/20 p-4 rounded-lg flex flex-col justify-center gap-1 col-span-2">
+        <h3 class="text-white/80 text-xl mb-2">Monthly Spending Limit</h3>
+        <div class="flex justify-between">
+          <p class="text-white font-bold text-sm">Monthly Spending</p>
+          <p class="text-white font-bold text-sm">$1000 / $2000</p>
+        </div>
+        <div class="w-full bg-blue-300/20 rounded-full h-4 mt-2">
+          <div class="bg-blue-500 h-4 rounded-full" style="width: 50%;"></div>
+        </div>
+        <p class="text-yellow-300 text-xs mt-1">$1000 left</p>
+      </div>
+      <div class="border border-blue-300/20 px-4 py-2 rounded-lg flex flex-col gap-1 row-span-2">
+        <h3 class="text-white/80 text-lg">Upcoming Bills</h3>
+        <div class="flex flex-col gap-3">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+              <div class="w-7 h-7 bg-gray-500 rounded"></div>
+              <div>
+                <p class="text-white font-bold text-xs">Netflix</p>
+                <p class="text-white/80 text-[10px]">$ 15.99</p>
+              </div>
+            </div>
+            <p class="text-yellow-300 text-xs">Due in 3 days</p>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+              <div class="w-7 h-7 bg-gray-500 rounded"></div>
+              <div>
+                <p class="text-white font-bold text-xs">Spotify</p>
+                <p class="text-white/80 text-[10px]">$ 9.99</p>
+              </div>
+            </div>
+            <p class="text-yellow-300 text-xs">Due in 5 days</p>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+              <div class="w-7 h-7 bg-gray-500 rounded"></div>
+              <div>
+                <p class="text-white font-bold text-xs">Youtube Premium</p>
+                <p class="text-white/80 text-[10px]">$ 16.99</p>
+              </div>
+            </div>
+            <p class="text-red-400 text-xs">Overdue</p>
+          </div>
+
+        </div>
+      </div>
+{{ end }}
