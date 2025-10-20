@@ -1,5 +1,5 @@
 {{ define "dashboard" }}
-  <div class="mx-90 flex flex-col gap-8">
+  <div class="mx-90 flex flex-col gap-6">
     <h2 class="text-white font-bold text-5xl mb-4">Dashboard</h2>
     <div class="grid grid-cols-3 gap-6">
       <div class="border border-blue-300/20 p-4 rounded-lg flex flex-col justify-center gap-1">
@@ -63,6 +63,62 @@
 
         </div>
       </div>
+    </div>
+    <div class="grid grid-cols-3 gap-6">
+      {{ template "subscriptionList" . }}
+    </div>
+  </div>
+{{ end }}
+
+{{ define "subscriptionList" }}
+  <div class="border border-blue-300/20 rounded-lg col-span-2 py-4">
+    <h3 class="text-white font-bold text-xl ml-4">All Subscriptions</h3>
+    <div class="mt-4 flex flex-col">
+      <!-- Subscriptions Item -->
+      <div class="flex justify-between items-center py-2 px-4 border-b border-blue-300/10 hover:bg-blue-300/10 cursor-pointer">
+        <div class="flex gap-2 items-center">
+          <div class="w-7 h-7 bg-gray-500 rounded"></div>
+          <div>
+            <p class="text-white font-bold text-xs">Netflix</p>
+            <p class="text-white/80 text-[10px]">Entertainment</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 items-end">
+          <p class="text-white font-bold text-sm">$ 15.99/mo</p>
+          <p class="text-white/80 text-xs">Next bill: Oct 25</p>
+        </div>
+      </div>
+      <!-- Subscriptions Item -->
+        <!-- Subscriptions Item -->
+      <div class="flex justify-between items-center py-2 px-4 border-b border-blue-300/10 hover:bg-blue-300/10 cursor-pointer">
+        <div class="flex gap-2 items-center">
+          <div class="w-7 h-7 bg-gray-500 rounded"></div>
+          <div>
+            <p class="text-white font-bold text-xs">Spotify</p>
+            <p class="text-white/80 text-[10px]">Entertainment</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 items-end">
+          <p class="text-white font-bold text-sm">$ 9.99/mo</p>
+          <p class="text-white/80 text-xs">Next bill: Oct 25</p>
+        </div>
+      </div>
+      <!-- Subscriptions Item -->
+        <!-- Subscriptions Item -->
+      <div class="flex justify-between items-center py-2 px-4 border-b border-blue-300/10 hover:bg-blue-300/10 cursor-pointer">
+        <div class="flex gap-2 items-center">
+          <div class="w-7 h-7 bg-gray-500 rounded"></div>
+          <div>
+            <p class="text-white font-bold text-xs">Youtube Premium</p>
+            <p class="text-white/80 text-[10px]">Entertainment</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 items-end">
+          <p class="text-white font-bold text-sm">$ 16.99/mo</p>
+          <p class="text-white/80 text-xs">Next bill: Oct 25</p>
+        </div>
+      </div>
+      <!-- Subscriptions Item -->
     </div>
   </div>
 {{ end }}
