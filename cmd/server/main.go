@@ -75,8 +75,12 @@ func main() {
 		renderer.Render(w, "base", page)
 	})
 
-	router.HandleFunc("GET /subs", func(w http.ResponseWriter, r *http.Request) {
-		renderer.Render(w, "subs", page)
+	router.HandleFunc("GET /home", func(w http.ResponseWriter, r *http.Request) {
+		renderer.Render(w, "dashboard", page)
+	})
+
+	router.HandleFunc("GET /subscriptions", func(w http.ResponseWriter, r *http.Request) {
+		renderer.Render(w, "mySubs", page)
 	})
 
 	fmt.Println("Listening on port :8080")
