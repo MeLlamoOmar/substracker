@@ -1,7 +1,7 @@
 {{ define "dashboard" }}
-  <div class="mx-90 flex flex-col gap-6">
+  <div class="xl:mx-90 flex flex-col gap-6 px-4">
     <h2 class="text-white font-bold text-5xl mb-4">Dashboard</h2>
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
       <div class="border border-blue-300/20 p-4 rounded-lg flex flex-col justify-center gap-1">
         <h3 class="text-white/80 text-lg mb-2">Total Monthly Cost</h3>
         <p class="text-white font-bold text-xl">RD$ 350</p>
@@ -15,8 +15,8 @@
         <p class="text-white font-bold text-xl">RD$ 700</p>
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-6">
-      <div class="border border-blue-300/20 p-4 rounded-lg flex flex-col justify-center gap-1 col-span-2">
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div class="border border-blue-300/20 p-4 rounded-lg flex flex-col justify-center gap-1 xl:col-span-2">
         <h3 class="text-white/80 text-xl mb-2">Monthly Spending Limit</h3>
         <div class="flex justify-between">
           <p class="text-white font-bold text-sm">Monthly Spending</p>
@@ -27,7 +27,7 @@
         </div>
         <p class="text-yellow-300 text-xs mt-1">$1000 left</p>
       </div>
-      <div class="border border-blue-300/20 px-4 py-2 rounded-lg flex flex-col gap-1 row-span-2">
+      <div class="border border-blue-300/20 px-4 py-2 rounded-lg flex flex-col gap-1 xl:row-span-2">
         <h3 class="text-white/80 text-lg">Upcoming Bills</h3>
         <div class="flex flex-col gap-3">
           <div class="flex justify-between items-center">
@@ -40,7 +40,7 @@
             </div>
             <p class="text-yellow-300 text-xs">Due in 3 days</p>
           </div>
-          <div class="flex justify-between items-center">
+          <div class="flex justify-between md:items-center">
             <div class="flex gap-2 items-center">
               <div class="w-7 h-7 bg-gray-500 rounded"></div>
               <div>
@@ -64,14 +64,14 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
       {{ template "subscriptionList" . }}
     </div>
   </div>
 {{ end }}
 
 {{ define "subscriptionList" }}
-  <div class="border border-blue-300/20 rounded-lg col-span-2 py-4">
+  <div class="border border-blue-300/20 rounded-lg col-span-2 py-4 xl:mt-[-25px]">
     <h3 class="text-white font-bold text-xl ml-4">All Subscriptions</h3>
     <div class="mt-4 flex flex-col">
       <!-- Subscriptions Item -->
